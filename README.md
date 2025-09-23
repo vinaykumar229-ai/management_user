@@ -24,8 +24,33 @@ Built with **React** and interacts with [JSONPlaceholder](https://jsonplaceholde
 ---
 
 ## Setup & Run Instructions
-
-1. Clone the repo:
-   ```bash
+ Clone the repo:
+   bash
    git clone https://github.com/your-username/user-management-app.git
    cd user-management-app
+Install dependencies:
+
+npm install
+
+
+Run the development server:
+
+npm start
+
+
+or if using Vite:
+
+npm run dev
+
+
+Open in browser:
+
+http://localhost:3000
+
+Challenges Faced
+
+Mock API Limitations: JSONPlaceholder does not persist changes. So add, edit, and delete requests return success but won’t affect the actual API data.
+
+Pagination & Filtering: Since API doesn’t provide server-side pagination or filters, these were implemented client-side.
+
+Form Validation: Ensuring proper validation for all fields (like email format) required extra handling.
